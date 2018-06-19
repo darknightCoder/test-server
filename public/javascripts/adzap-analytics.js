@@ -201,12 +201,12 @@
             var ip = ip;
             console.log(ip);
 
-            fetch(url+'/api/v1/tracker/ck?publisherKey='+key+'&publisherID='+id+'&fingerPrintID='+this._fingerprint+'&siteID='+siteId+'&ipAddr='+ip+'&device='+device+'&browserInfo='+browserInfo, {
+            fetch(url+'/api/v1/tracker/ckevent?publisherKey='+key+'&publisherID='+id+'&fingerPrintID='+this._fingerprint+'&siteID='+siteId+'&ipAddr='+ip+'&device='+device+'&browserInfo='+browserInfo, {
                 credentials: 'include'
             })
         }).catch((e)=>{
 
-            fetch(url+'/api/v1/tracker/ck?publisherKey='+key+'&publisherID='+id+'&fingerPrintID='+this._fingerprint+'&siteID='+siteId+'&ipAddr='+e+'&device='+device+'&browserInfo='+browserInfo, {
+            fetch(url+'/api/v1/tracker/ckevent?publisherKey='+key+'&publisherID='+id+'&fingerPrintID='+this._fingerprint+'&siteID='+siteId+'&ipAddr='+e+'&device='+device+'&browserInfo='+browserInfo, {
                 credentials: 'include'
             })
         })
